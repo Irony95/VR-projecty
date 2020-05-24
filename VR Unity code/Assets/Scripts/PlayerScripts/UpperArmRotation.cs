@@ -29,6 +29,12 @@ public class UpperArmRotation : MonoBehaviour
     private float comYawOffset = 0;
     private int amountOfReadingsDone = 0;
     private bool gettingError = false;
+    private Transform camera;
+
+    private void Start() 
+    {
+        camera = Camera.main.transform;    
+    }
 
     //declinationAngle for singapore
     private float declinationAngle = (0.0f + (8.0f / 60.0f)) / (180.0f / Mathf.PI);
@@ -104,6 +110,7 @@ public class UpperArmRotation : MonoBehaviour
             Debug.Log("all dat gyro bro");
             yaw =  gyroYaw;  
         }
+        yaw -= camera.rotation.y;
         Debug.Log(Mathf.Atan2(headingY, headingX)* 180/Mathf.PI);
     }
 

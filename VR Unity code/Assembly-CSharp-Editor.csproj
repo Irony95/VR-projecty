@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{1ef43874-31bf-eb56-3986-21a4eefc617e}</ProjectGuid>
+    <ProjectGuid>{ba0b1000-8eb8-b78c-8bff-6c8fd18e49fb}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -247,10 +247,10 @@
         <HintPath>D:/Unity application/Unity Editor/2019.3.9f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="Google.ProtocolBuffers">
-        <HintPath>D:/.My stuff/5.Unity projects/Vr Things/Assets/Vendors/GoogleVR/Plugins/Google.ProtocolBuffers.dll</HintPath>
+        <HintPath>D:/.My stuff/16. Ultimate Things/VR controller project/VR Unity code/Assets/Vendors/GoogleVR/Plugins/Google.ProtocolBuffers.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
-        <HintPath>D:/.My stuff/5.Unity projects/Vr Things/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
+        <HintPath>D:/.My stuff/16. Ultimate Things/VR controller project/VR Unity code/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
         <HintPath>D:/Unity application/Unity Editor/2019.3.9f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -607,42 +607,42 @@
         <HintPath>D:/Unity application/Unity Editor/2019.3.9f1/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.TestRunner">
-        <HintPath>D:/.My stuff/5.Unity projects/Vr Things/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
+        <HintPath>D:/.My stuff/16. Ultimate Things/VR controller project/VR Unity code/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TestRunner">
-        <HintPath>D:/.My stuff/5.Unity projects/Vr Things/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
+        <HintPath>D:/.My stuff/16. Ultimate Things/VR controller project/VR Unity code/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-        <HintPath>D:/.My stuff/5.Unity projects/Vr Things/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+        <HintPath>D:/.My stuff/16. Ultimate Things/VR controller project/VR Unity code/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-        <HintPath>D:/.My stuff/5.Unity projects/Vr Things/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+        <HintPath>D:/.My stuff/16. Ultimate Things/VR controller project/VR Unity code/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-        <HintPath>D:/.My stuff/5.Unity projects/Vr Things/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+        <HintPath>D:/.My stuff/16. Ultimate Things/VR controller project/VR Unity code/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-        <HintPath>D:/.My stuff/5.Unity projects/Vr Things/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+        <HintPath>D:/.My stuff/16. Ultimate Things/VR controller project/VR Unity code/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-        <HintPath>D:/.My stuff/5.Unity projects/Vr Things/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+        <HintPath>D:/.My stuff/16. Ultimate Things/VR controller project/VR Unity code/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-        <HintPath>D:/.My stuff/5.Unity projects/Vr Things/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+        <HintPath>D:/.My stuff/16. Ultimate Things/VR controller project/VR Unity code/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-        <HintPath>D:/.My stuff/5.Unity projects/Vr Things/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+        <HintPath>D:/.My stuff/16. Ultimate Things/VR controller project/VR Unity code/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-        <HintPath>D:/.My stuff/5.Unity projects/Vr Things/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+        <HintPath>D:/.My stuff/16. Ultimate Things/VR controller project/VR Unity code/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-        <HintPath>D:/.My stuff/5.Unity projects/Vr Things/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+        <HintPath>D:/.My stuff/16. Ultimate Things/VR controller project/VR Unity code/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{589b0daa-076f-bdc3-6145-bef2d075d5b2}</Project>
+      <Project>{abbdaf2c-2cfa-01ec-be70-9417e6db3dc3}</Project>
       <Name>Assembly-CSharp</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
