@@ -5,4 +5,6 @@ The code is like super badly written, and still has a lot of bugs that i dont ha
 
 The arduino uses a magnetometer, gyroscope, acelerometer for the upper arm rotation measurement, a potentiometer for the forearm rotation measurement, and some buttons for the inputs. The data are all sent to the unity code.
 
-The arduino sends a string of information to the bluetooth in an android phone, which reads it and updates the values blah blah.
+The arduino sends a string of information to the bluetooth in an android phone, which reads it and calculates values for the rotation.
+
+for the shoulder rotation, by using similar triangles in gyroscope, accelerometer and magnetometer data, you can determine the rotation of your shoulder no matter what length down you place the IMUs. the potentiometer reads the angle of your forearm to your upper arm.
