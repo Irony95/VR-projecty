@@ -1,7 +1,7 @@
 # VR-projecty
 
 This repo contains the code for the an arduino VR controller, and the unity project that works with the controller.
-The code is like super badly written, so feel free to change, update and copy if u want to lol.
+The code is like super badly written, and still has a lot of bugs that i dont have time to fix. So feel free to change, update and copy if u want to, just make sure to fix and tidy things up :).
 
 The arduino uses a magnetometer, gyroscope, acelerometer for the upper arm rotation measurement, a potentiometer for the forearm rotation measurement, and some buttons for the inputs. The data are all sent to the unity code.
 
