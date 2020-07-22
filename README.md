@@ -7,4 +7,4 @@ The arduino uses a magnetometer, gyroscope, acelerometer for the upper arm rotat
 
 The arduino sends a string of information to the bluetooth in an android phone, which reads it and calculates values for the rotation.
 
-for the shoulder rotation, by using similar triangles in gyroscope, accelerometer and magnetometer data, you can determine the rotation of your shoulder no matter what length down you place the IMUs. the potentiometer reads the angle of your forearm to your upper arm.
+for the shoulder rotation, by using corrosponding angles in parallel lines with the gyroscope, accelerometer and magnetometer data, you can determine the rotation of your shoulder no matter what length down you place the IMUs. the potentiometer reads the angle of your forearm to your upper arm.
