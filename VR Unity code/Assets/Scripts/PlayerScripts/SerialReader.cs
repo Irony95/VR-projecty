@@ -112,7 +112,6 @@ public class SerialReader : MonoBehaviour
                     if (read[i] == endingChar)
                     {                                
                         ParseData(currentRead);
-                        onScreenText.text = currentRead;
                         currentRead = "";
                     }
                     else
@@ -169,6 +168,8 @@ public class SerialReader : MonoBehaviour
             string[] values = (data.Split(splitChar));            
             armRotate.UpdateRotation(-float.Parse(values[0]), -float.Parse(values[1]), -float.Parse(values[2]), -float.Parse(values[3]),
              float.Parse(values[4]), float.Parse(values[5]), float.Parse(values[6]), float.Parse(values[7]));
+
+            onScreenText.text = armRotate.yaw + "\n" + transform.rotation.y.ToString();
              
             elbowRotate.UpdateRotation(float.Parse(values[8]));
             if (int.Parse(values[9]) == 1)

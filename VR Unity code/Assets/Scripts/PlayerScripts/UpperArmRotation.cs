@@ -29,11 +29,11 @@ public class UpperArmRotation : MonoBehaviour
     private float comYawOffset = 0;
     private int amountOfReadingsDone = 0;
     private bool gettingError = false;
-    private Transform camera;
+    private Transform playerHead;
 
     private void Start() 
     {
-        camera = Camera.main.transform;    
+        playerHead = Camera.main.transform;    
     }
 
     //declinationAngle for singapore
@@ -46,8 +46,8 @@ public class UpperArmRotation : MonoBehaviour
         {
             CalculateValues(gyroX - gyroOffset.x, gyroY - gyroOffset.y, gyroZ - gyroOffset.z,
              accPitch - accPitchOffset, accRoll - accRollOffset, headingX, headingY, headingZ);
-
-            gameObject.transform.rotation = Quaternion.Euler(pitch, yaw, roll);
+            gameObject.transform.localRotation = Quaternion.Euler(pitch, yaw, roll);
+            Debug.Log(yaw);
         }
         else
         {
@@ -98,6 +98,7 @@ public class UpperArmRotation : MonoBehaviour
         {
 
             float compassHeading = CalculateYawWithCompass(headingX, headingY, headingZ) - comYawOffset;
+            //float compassHeading = Mathf.Atan2(headingY, headingX) - comYawOffset;
             if (compassHeading > Mathf.PI)
             {
                 compassHeading -= 2* Mathf.PI;
@@ -110,10 +111,7 @@ public class UpperArmRotation : MonoBehaviour
             Debug.Log("all dat gyro bro");
             yaw =  gyroYaw;  
         }
-        yaw -= camera.rotation.y;
-        Debug.Log(Mathf.Atan2(headingY, headingX)* 180/Mathf.PI);
     }
-
     private float CalculateYawWithCompass(float headingX, float headingY, float headingZ)
     {
         float cosRoll = Mathf.Cos(-roll * Mathf.PI/180);
@@ -144,6 +142,7 @@ public class UpperArmRotation : MonoBehaviour
             gyroOffset += new Vector3(gyroX, gyroY, gyroZ);
             accRollOffset += accRoll;
             accPitchOffset += accPitch;
+            comYawOffset += Mathf.Atan2(headingY, headingX);
             amountOfReadingsDone++;
             Debug.Log(amountOfReadingsDone);
         }
@@ -153,13 +152,14 @@ public class UpperArmRotation : MonoBehaviour
             gyroOffset = new Vector3(gyroOffset.x / amountOfErrorReadings, gyroOffset.y / amountOfErrorReadings, gyroOffset.z / amountOfErrorReadings);            
             accPitchOffset = accPitchOffset / amountOfErrorReadings;
             accRollOffset = accRollOffset/ amountOfErrorReadings;
+            comYawOffset = comYawOffset/ amountOfErrorReadings;
 
             //In order to get an accurate offset for yaw, we need accurate data for pitch and roll, as it is used in the calculation of yaw.
             //Thereforem we calculate the values to update roll and pitch
             CalculateValues(gyroX - gyroOffset.x, gyroY - gyroOffset.y, gyroZ - gyroOffset.z,
             accPitch - accPitchOffset, accRoll - accRollOffset, headingX, headingY, headingZ);
 
-            comYawOffset = CalculateYawWithCompass(headingX, headingY, headingZ);
+            //comYawOffset = CalculateYawWithCompass(headingX, headingY, headingZ);
             Debug.Log("offset is ");
             Debug.Log(comYawOffset);
             gettingError = false;

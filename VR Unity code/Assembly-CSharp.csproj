@@ -36,7 +36,7 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\PlayerMovable.cs" />
+     <Compile Include="Assets\Scripts\PlayerMovable.cs" />
      <Compile Include="Assets\Scripts\PlayerScripts\BluetoothPlugin.cs" />
      <Compile Include="Assets\Scripts\PlayerScripts\FollowCameraRotation.cs" />
      <Compile Include="Assets\Scripts\PlayerScripts\ForeArmRotation.cs" />
